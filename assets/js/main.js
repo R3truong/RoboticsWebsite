@@ -4,6 +4,7 @@
 	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
 */
 
+
 (function($) {
 
 	var	$window = $(window),
@@ -93,3 +94,36 @@
 			});
 
 })(jQuery);
+
+
+
+function calendar_create()
+{
+	let eventData = [];
+
+	const sidebar = document.getElementById("sidebar");
+	const calendar = document.getElementById("calendar");
+	fetch('./assets/php/calendar.php')
+        .then(response => response.json())
+        .then(data => {
+            // Populate the eventData array with the retrieved data.
+            eventData.push(...data);
+
+            // Create event elements and append them to the calendar.
+            eventData.forEach(event => {
+                const eventElement = document.createElement("section");
+                eventElement.classList.add("calendar-item");
+                eventElement.textContent = `${event.date}: ${event.event}`;
+                calendar.appendChild(eventElement);
+            });
+        })
+        .catch(error => {
+            console.error("Error fetching event data: " + error);
+
+        });
+
+		
+
+}
+
+document.addEventListener("DOMContentLoaded", calendar_create);
