@@ -3,7 +3,11 @@
     margin:0px;
     padding:0px;
 }
-
+#calendar
+{
+    display:flex;
+    flex-direction: column;
+}
 .calendar-item
 {
     display:flex;
@@ -14,6 +18,11 @@
     text-align: center;
 
 }
+#calendar-footer
+{
+    border-top: 3px solid black;;
+    margin: 10px 0px;
+}
 .calendar-item h3
 {
     border-bottom: 3px solid black;
@@ -23,9 +32,9 @@
 {
     display:flex;
     min-height: 100px;
-    align-items: center;
+    flex-direction: column;
 }
-#calendar-link
+.calendar-link
 {
     display:inline-block;
     cursor:pointer;
@@ -34,7 +43,7 @@
 }
 .calendar-item p
 {
-    padding-bottom: 2px;
+    margin: 5px 0px;
     margin-right:5px;
 }
 

@@ -6,12 +6,12 @@
         <title></title>
         <meta name="description" content="">
         <meta name="viewport" content="width=device-width, initial-scale=1">
-        <link rel="stylesheet" href="test.css">
+        <link rel="stylesheet" href="calendar.css">
     </head>
     <body>
         <section id="calendar">
             <!-- Example Calendar Item -->
-            <a id="calendar-link">
+            <!-- <a id="calendar-link">
                 <section class="calendar-item">
                     <h3>Title</h3>
                     <span class="calendar-inner">
@@ -20,25 +20,25 @@
                     </span>
                     <p>Click for more details...</p>
                 </section>
-            </a>
+            </a> -->
         </section>
 
     <div id="modal">
         <div class="modal-content">
             <span id="close">&times;</span>
-            <h3>Event Title</h3>
+            <h3 id="modal-event-title">Event Title</h3>
             <br>
-            <p>Date: 11/7/2023</p>
+            <p id="modal-event-date">Date: 11/7/2023</p>
             <br>
-            <p>Time: 10:30PM</p>
+            <p id="modal-event-time">Time: 10:30PM</p>
             <br>
-            <p>Description: This is an event that does this and that and has
+            <p id="modal-event-description">Description: This is an event that does this and that and has
                 a description because it exists and im making stuff up to make it long
                 to display how it looks with a detailed description.
             </p>
         </div>
     </div>
         
-        <script src="test.js" async defer></script>
+        <script src="calendar.js" async defer></script>
     </body>
 </html>

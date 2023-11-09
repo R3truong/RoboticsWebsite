@@ -10,6 +10,8 @@
 		<meta charset="utf-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
 		<link rel="stylesheet" href="assets/css/main.css" />
+        <link rel="stylesheet" href="calendar.css">
+
 	</head>
 	<body class="is-preload">
 
@@ -218,13 +220,29 @@
 					</section>
 
 			</div>
-
+			
+			<div id="modal">
+				<div class="modal-content">
+					<span id="close">&times;</span>
+					<h3 id="modal-event-title">Event Title</h3>
+					<br>
+					<p id="modal-event-date">Date: 11/7/2023</p>
+					<br>
+					<p id="modal-event-time">Time: 10:30PM</p>
+					<br>
+					<p id="modal-event-description">Description: This is an event that does this and that and has
+						a description because it exists and im making stuff up to make it long
+						to display how it looks with a detailed description.
+					</p>
+				</div>
+			</div>
 		<!-- Scripts -->
 			<script src="assets/js/jquery.min.js"></script>
 			<script src="assets/js/browser.min.js"></script>
 			<script src="assets/js/breakpoints.min.js"></script>
 			<script src="assets/js/util.js"></script>
 			<script src="assets/js/main.js"></script>
+			<script src="calendar.js"></script>
 
 	</body>
 </html>
